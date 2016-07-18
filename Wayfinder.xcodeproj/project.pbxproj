@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B650A1E1D3C587C006AB063 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B650A1D1D3C587C006AB063 /* MapKit.framework */; };
+		8B650A201D3C5987006AB063 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B650A1F1D3C5987006AB063 /* CoreLocation.framework */; };
 		8BE221531D3C4FE2006FB1C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE221521D3C4FE2006FB1C0 /* AppDelegate.swift */; };
 		8BE221551D3C4FE2006FB1C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE221541D3C4FE2006FB1C0 /* ViewController.swift */; };
 		8BE221581D3C4FE2006FB1C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE221561D3C4FE2006FB1C0 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B650A1D1D3C587C006AB063 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8B650A1F1D3C5987006AB063 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8BE2214F1D3C4FE2006FB1C0 /* Wayfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wayfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE221521D3C4FE2006FB1C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BE221541D3C4FE2006FB1C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B650A201D3C5987006AB063 /* CoreLocation.framework in Frameworks */,
+				8B650A1E1D3C587C006AB063 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 		8BE221461D3C4FE2006FB1C0 = {
 			isa = PBXGroup;
 			children = (
+				8B650A1F1D3C5987006AB063 /* CoreLocation.framework */,
+				8B650A1D1D3C587C006AB063 /* MapKit.framework */,
 				8BE221511D3C4FE2006FB1C0 /* Wayfinder */,
 				8BE221661D3C4FE3006FB1C0 /* WayfinderTests */,
 				8BE221711D3C4FE3006FB1C0 /* WayfinderUITests */,
@@ -193,6 +201,12 @@
 				TargetAttributes = {
 					8BE2214E1D3C4FE2006FB1C0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4A9CJV2EBC;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8BE221621D3C4FE3006FB1C0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -401,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Wayfinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "saunders-brandon.Wayfinder";
@@ -412,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Wayfinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "saunders-brandon.Wayfinder";
@@ -484,6 +500,7 @@
 				8BE221791D3C4FE3006FB1C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BE2217A1D3C4FE3006FB1C0 /* Build configuration list for PBXNativeTarget "WayfinderTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				8BE2217C1D3C4FE3006FB1C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BE2217D1D3C4FE3006FB1C0 /* Build configuration list for PBXNativeTarget "WayfinderUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				8BE2217F1D3C4FE3006FB1C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
